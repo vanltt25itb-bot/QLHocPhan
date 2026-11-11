@@ -1,0 +1,382 @@
+
+/* =====================================
+   1. CÀI ĐẶT CHUNG
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F8F4F1;
+    color: #352B28;
+    line-height: 1.5;
+}
+
+
+/* =====================================
+   2. KHUNG CHÍNH
+===================================== */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 35px auto;
+}
+
+
+/* =====================================
+   3. TIÊU ĐỀ TRANG
+===================================== */
+
+h1 {
+    text-align: center;
+    color: #641E2B;
+    font-size: 28px;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+
+/* =====================================
+   4. NÚT THÊM GIẢNG VIÊN
+===================================== */
+
+.add-button {
+    margin-bottom: 18px;
+}
+
+.add-button a {
+    display: inline-block;
+    background-color: #641E2B;
+    color: white;
+    padding: 10px 17px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.add-button a:hover {
+    background-color: #803746;
+}
+
+
+/* =====================================
+   5. KHUNG BẢNG
+===================================== */
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    background-color: white;
+    border-radius: 9px;
+    box-shadow: 0 3px 12px rgba(70, 35, 35, 0.08);
+}
+
+
+/* =====================================
+   6. BẢNG DỮ LIỆU
+===================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 650px;
+}
+
+th,
+td {
+    padding: 10px 12px;
+    text-align: center;
+    border-bottom: 1px solid #E5D8D2;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+th {
+    background-color: #641E2B;
+    color: white;
+    font-weight: bold;
+    padding: 12px 10px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #F3EAE7;
+}
+
+tbody tr:hover {
+    background-color: #EDE0DB;
+}
+
+
+/* =====================================
+   7. HÌNH ẢNH GIẢNG VIÊN
+===================================== */
+
+.teacher-image {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #E5D8D2;
+    display: block;
+    margin: auto;
+}
+
+
+/* =====================================
+   8. NÚT SỬA VÀ XÓA
+===================================== */
+
+.actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.actions form {
+    margin: 0;
+}
+
+.actions a,
+.actions button {
+    display: inline-block;
+    min-width: 52px;
+    padding: 7px 11px;
+    background-color: #705044;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.actions a:hover,
+.actions button:hover {
+    background-color: #50382F;
+}
+
+
+/* =====================================
+   9. FORM THÊM VÀ SỬA
+===================================== */
+
+.form-container {
+    max-width: 550px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 9px;
+    box-shadow: 0 3px 12px rgba(70, 35, 35, 0.08);
+}
+
+.form-container label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: bold;
+    color: #641E2B;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #D9C9C1;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+    outline: none;
+    border-color: #80584B;
+}
+
+.form-container button {
+    margin-top: 18px;
+    padding: 10px 18px;
+    background-color: #705044;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* =====================================
+   10. RESPONSIVE - TABLET
+===================================== */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 95%;
+        margin: 25px auto;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    th,
+    td {
+        padding: 9px;
+        font-size: 13px;
+    }
+
+}
+
+
+/* =====================================
+   11. RESPONSIVE - ĐIỆN THOẠI
+===================================== */
+
+@media (max-width: 480px) {
+
+    .container {
+        width: 96%;
+        margin: 18px auto;
+    }
+
+    h1 {
+        font-size: 21px;
+    }
+
+    .add-button a {
+        padding: 9px 13px;
+    }
+
+    .teacher-image {
+        width: 55px;
+        height: 55px;
+    }
+
+}
+
+
+
+/* =====================================
+   FORM THÊM / SỬA GIẢNG VIÊN
+===================================== */
+
+.form-page {
+    min-height: 100vh;
+    padding: 35px 15px;
+    background-color: #F8F4F1;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 520px;
+    margin: 15px auto;
+    padding: 30px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(70, 35, 35, 0.10);
+}
+
+.form-container h1 {
+    color: #641E2B;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.form-container label {
+    display: block;
+    margin: 15px 0 7px;
+    color: #641E2B;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container input[type="file"],
+.form-container textarea {
+    display: block;
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #D9C9C1;
+    border-radius: 6px;
+    background: #FFFEFD;
+    color: #352B28;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+    outline: none;
+    border-color: #80584B;
+    box-shadow: 0 0 0 3px rgba(112, 80, 68, 0.10);
+}
+
+.form-container input[type="file"] {
+    cursor: pointer;
+    background: #F8F4F1;
+}
+
+.form-container button[type="submit"] {
+    display: block;
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    background-color: #705044;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.form-container button[type="submit"]:hover {
+    background-color: #50382F;
+}
+
+.back-link {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #705044;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.back-link:hover {
+    color: #641E2B;
+    text-decoration: underline;
+}
+
+.current-image {
+    display: block;
+    width: 85px;
+    height: 85px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 10px 0;
+    border: 2px solid #E5D8D2;
+}
+
+@media (max-width: 480px) {
+    .form-page {
+        padding: 15px 10px;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    .form-container h1 {
+        font-size: 22px;
+    }
+}
